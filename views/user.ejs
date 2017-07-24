@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	   	<script type="text/javascript" src="./public/javascripts/userControl.js"></script>
+
+    <title><%= name %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1 id="user">Welcome  <%= name %></h1>
+   	<h3>Add Photos</h3>
+   	<form class="form-inline">
+   		<div class="form-group">
+      <label for="url">Enter the Name</label>
+      <input type="text" name="name" id="name" required>
+   		<label for="url">Enter the URL</label>
+   		<input type="text" name="url" id="link" required>
+   		</div>
+   		
+   		<div class="form-group"><button id="addphoto">Add New photo</button></div>
+
+      <div class="form-group">
+      <label for="album">Enter the Album name</label>
+      <input type="text" name="album" id="album" required>
+      <label for="url">Enter the URL's separated by semicolon(;)</label>
+      <input type="text" name="url" id="albumLink" required>
+      </div>
+      
+      <div class="form-group"><button id="addAlbum">Create New Album</button></div>
+   	</form>
+    <div >
+   	<h3>Your Photos</h3>
+    <br>
+    <div id="photos">
+    </div>
+    <br>
+    <div id="albums">
+      
+    </div>
+   	</div>
+   	
+  </body>
+</html>

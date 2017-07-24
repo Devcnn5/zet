@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	   	<script type="text/javascript" src="./public/javascripts/indexControl.js"></script>
+
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+   	<h3>Add Users</h3>
+   	<form class="form-inline">
+   		<div class="form-group">
+   		<label for="firstName">First Name</label>
+   		<input type="text" name="firstName" id="first" required>
+   		</div>
+   		<div class="form-inline">
+   		<label>Last Name</label>	
+   		<input type="text" name="lastName" id="last" required>
+   		</div>
+   		<div class="form-group">
+   		<label for="email">E-mail</label>
+   		<input type="email" name="email" id="mail" required>
+   		</div>
+   		<div class="form-group">
+   		<label for="phone">Telephone</label>
+   		<input type="tel" name="phone" id="number" required>
+   		</div>
+   		<div class="form-group">
+   		<label for="Password">Password</label>	
+   		<input type="password" name="Password" id="pwd" required>
+   		</div>
+   		<div class="form-group"><button id="create">Create New User</button></div>
+   	</form>
+   	<h3>Choose a User</h3>
+   	<table border="1px">
+   		<thead>
+   			
+   				<th>First Name</th>
+   			
+   			
+   				<th>Last Name</th>
+   			
+   			
+   				<th>Password</th>
+   			
+
+   				<th>Login</th>
+   			
+   		</thead>
+   		<tbody id="tbody">
+
+
+   			
+   		</tbody>
+   	</table>
+   	
+  </body>
+</html>
